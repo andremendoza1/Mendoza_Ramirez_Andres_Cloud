@@ -1,14 +1,13 @@
 *{
     padding: 0;
-    margin: 0;  
-    color: #60c41e;
+    margin: 0;
+    color: #57b7e3;
     text-align: center;
 
 }
 
 html, body{
-    background-color: aqua;
-
+    background-color: rgb(142, 68, 227);
 }
 
 .main-container{
@@ -16,8 +15,7 @@ html, body{
     border-radius: 58px;
     margin: 2rem;
     background-color: #009942;
-    padding: 1rem; 
-
+    padding: 1rem;
 }
 
 nav, section, footer, aside, article{
@@ -25,18 +23,15 @@ nav, section, footer, aside, article{
     margin: 1rem;
     border-radius: 10px;
     padding: 1rem;
-
 }
 
 article, aside{
     width: 40%;
     display: inline-block;
-    height: 200px;  
+    height: 200px;
     background-color: aquamarine;
-
 }
 
 nav, footer, section{
     background-color: burlywood;
-
 }
