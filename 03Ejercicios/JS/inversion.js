@@ -16,7 +16,7 @@ function interes(){
     var total = resultado + interes;
 
 
-    document.formulario.sueldoI.value = "$"+total;
+    document.formulario.sueldoI.value = "$$"+total;
 
 }
 
