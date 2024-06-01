@@ -36,10 +36,12 @@ body {
     color: white;
     border-radius: 11px;
     cursor: pointer;
+        
 }
 .Calculadora button:hover {
     background-color: #99e739;
-}
+    
 .result {
     margin-top: 20px;
+}
 }

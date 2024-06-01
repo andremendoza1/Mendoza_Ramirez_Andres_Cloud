@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comisiones</title>
+    <link rel="stylesheet" href="CSS/ComisionVentas.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Comisiones</h1>
+        <form id="formularioComisiones">
+            <label for="sueldoBase">Sueldo Base:</label>
+            <input type="number" id="sueldoBase" required>
+            <label for="venta1">Venta 1:</label>
+            <input type="number" id="venta1" required>
+            <label for="venta2">Venta 2:</label>
+            <input type="number" id="venta2" required>
+            <label for="venta3">Venta 3:</label>
+            <input type="number" id="venta3" required>
+            <div class="botones">
+                <button type="button" onclick="calcularComision()">Calcular</button>
+                <button type="button" onclick="borrarCampos()">Borrar</button>
+            </div>
+        </form>
+        <div id="resultado">
+            <p id="resultadoComision"></p>
+            <p id="resultadoTotal"></p>
+            <p id="mensajeError" class="error"></p>
+        </div>
+    </div>
+    <script src="JS/ComisionVentas.js"></script>
+</body>
+</html>
