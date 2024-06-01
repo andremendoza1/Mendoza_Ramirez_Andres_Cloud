@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <link rel="stylesheet" href="CSS/Edad.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Edad</h1>
+        <form id="ageForm">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+            <div class="botones">
+                <button type="button" onclick="calcularEdad()">Calcular Edad</button>
+                <button type="button" onclick="borrarCampo()">Borrar</button>
+            </div>
+        </form>
+        <div id="resultado">
+            <p id="edad"></p>
+        </div>
+    </div>
+    <script src="JS/Edad.js"></script>
+</body>
+</html>
