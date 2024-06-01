@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calificación Final</title>
+    <link rel="stylesheet" href="CSS/CalificacionFinal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Calificación Final</h1>
+        <form id="gradeForm">
+            <label for="parcial1">Calificación Parcial 1:</label>
+            <input type="number" id="parcial1" required>
+            <label for="parcial2">Calificación Parcial 2:</label>
+            <input type="number" id="parcial2" required>
+            <label for="parcial3">Calificación Parcial 3:</label>
+            <input type="number" id="parcial3" required>
+            <label for="examenFinal">Calificación Examen Final:</label>
+            <input type="number" id="examenFinal" required>
+            <label for="trabajo">Calificación Trabajo:</label>
+            <input type="number" id="trabajo" required>
+            <div class="botones">
+                <button type="button" onclick="calcularCalificacionFinal()">Calcular Calificación Final</button>
+                <button type="button" onclick="borrar()">Borrar</button>
+            </div>
+        </form>
+        <div id="resultado">
+            <p id="calificacionFinal"></p>
+        </div>
+    </div>
+    <script src="JS/CalificacionFinal.js"></script>
+</body>
+</html>
