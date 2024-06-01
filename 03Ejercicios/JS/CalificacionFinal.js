@@ -1,4 +1,4 @@
-function calcularCalificacionFinal() {
+function CalificacionFinal() {
     const parcial1 = parseFloat(document.getElementById('parcial1').value);
     const parcial2 = parseFloat(document.getElementById('parcial2').value);
     const parcial3 = parseFloat(document.getElementById('parcial3').value);
