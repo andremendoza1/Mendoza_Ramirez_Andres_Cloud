@@ -1,4 +1,10 @@
-//deberan de resolver el problema 1 y 3
+function problema1(){
+
+
+
+
+
+}
 
 function problema2(){
     //lo primero que necesito es obtener los campos
@@ -39,4 +45,12 @@ function problema2(){
 
     document.querySelector('#p2-output').textContent = 
     'Producto Escalar Minimo es de : ' + p2_producto;
+}
+
+
+function problema3(){
+
+
+
+    
 }
