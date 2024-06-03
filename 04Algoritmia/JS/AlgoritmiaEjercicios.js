@@ -1,9 +1,18 @@
-function problema1(){
+function problema1() {
+    // Obtener el input del usuario
+    var input = document.querySelector('#p1-input').value;
 
+    // Separar las palabras por espacios y almacenarlas en un array
+    var palabras = input.split(' ');
 
+    // Invertir el orden de las palabras en el array
+    var palabrasInvertidas = palabras.reverse();
 
+    // Unir las palabras invertidas en una cadena
+    var resultado = palabrasInvertidas.join(' ');
 
-
+    // Mostrar el resultado en el elemento con id 'p1-output'
+    document.querySelector('#p1-output').textContent= resultado;
 }
 
 function problema2(){
@@ -48,9 +57,28 @@ function problema2(){
 }
 
 
-function problema3(){
+function problema3() {
+    // Obtener el input del usuario
+    var input = document.querySelector('#p3-input').value.toUpperCase();
 
+    // Separar las palabras por comas
+    var palabras = input.split(',');
 
+    var maxUnicos = 0;
+    var palabraMaxUnicos = '';
 
-    
+    //El método llama a una función para cada elemento de una matriz.forEach()
+    palabras.forEach(function(palabra) {
+        // Crear un Set para contar los caracteres únicos
+        var unicos = new Set(palabra);
+
+        // Comparar y actualizar el resultado si es necesario
+        if (unicos.size > maxUnicos) {
+            maxUnicos = unicos.size;
+            palabraMaxUnicos = palabra;
+        }
+    });
+
+    // Mostrar el resultado
+    document.querySelector('#p3-output').textContent = 'La palabra con más caracteres únicos es: ' + palabraMaxUnicos + ' con ' + maxUnicos + ' caracteres únicos.';
 }
